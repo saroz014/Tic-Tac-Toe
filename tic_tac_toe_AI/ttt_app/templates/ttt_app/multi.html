@@ -1,0 +1,44 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'ttt_app/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'ttt_app/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Human1 vs Human2</title>
+  </head>
+  <body>
+      <header>
+        <p>Human1 vs Human2</p>
+      </header>
+      <input type="button" value="Restart" id="b" onclick="restartBnt(this)"/>
+      <table id="tab-tic-tac-toe" align='center'>
+
+      <tr>
+        <td id="0" onclick="clickedCell(this)"></td>
+        <td id="1" onclick="clickedCell(this)"></td>
+        <td id="2" onclick="clickedCell(this)"></td>
+      </tr>
+
+      <tr>
+        <td id="3" onclick="clickedCell(this)"></td>
+        <td id="4" onclick="clickedCell(this)"></td>
+        <td id="5" onclick="clickedCell(this)"></td>
+      </tr>
+
+      <tr>
+        <td id="6" onclick="clickedCell(this)"></td>
+        <td id="7" onclick="clickedCell(this)"></td>
+        <td id="8" onclick="clickedCell(this)"></td>
+      </tr>
+      <br>
+    </table>
+    <p id="message"></p>
+  </body>
+
+  <script type="text/javascript" src="{% static 'ttt_app/multiscript.js' %}">
+
+  </script>
+</html>
